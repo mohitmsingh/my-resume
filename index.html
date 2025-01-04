@@ -4,42 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        header { text-align: center; margin-bottom: 50px; }
-        h1 { color: #333; }
-        img { margin-bottom: 20px; }
-        section { margin-bottom: 30px; }
-        .section-title { font-size: 1.5em; color: #555; }
-        .content { margin-left: 20px; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%;">
+		<img src="images/profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%;">
         <h1>Mohit Mahendra Singh</h1>
-        <p>Email: mohit.itsector@gmail.com | Phone: +91 8446220289 | LinkedIn: <a href="#">linkedin.com/in/mohitmsingh</a></p>
-        <a href="files/MohitSingh_DevOpsCloud_Resume_2025.pdf" download="MohitSingh_DevOpsCloud_Resume_2025.pdf" class="download-link">
+        <p>Technical Lead | Senior DevOps & Cloud Engineer | Automation</p>
+        <p>+91 844 622 0289 | mohit.itsector@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/mohitmsingh/">LinkedIn</a> | <a href="https://github.com/mohitmsingh">GitHub Repo</a> | <a href="https://stackoverflow.com/users/10126162/mohit-m-singh">StackOverflow</a></p>
+		<a href="files/MohitSingh_DevOpsCloud_Resume_2025.pdf" download="MohitSingh_DevOpsCloud_Resume_2025.pdf" class="download-link">
             <i class="fa fa-download"></i> Download My Resume
-        </a>
     </header>
-    <section>
-        <div class="section-title">Summary</div>
-        <div class="content">
-            <p>11+ years of IT Experience, includes 7+ years as DevOps Cloud Expert facilitating Agile and Lead practices over Microservices, App Deployment & Infra Upgrades, Scaling, and Optimizing mission-critical deployments.</p>
-        </div>
-    </section>
-    <section>
-        <div class="section-title">Technical Skills</div>
-        <div class="content">
-            <p>
-                • Azure • AWS • Git • GitHub Actions • Azure DevOps • Terraform • Jenkins • SAST & DAST Tool • Docker • Kubernetes 
-                • Argo CD • Helm Charts • Open Telemetry • New Relic • Prometheus • Linux • ServiceNow • PowerShell • Bash • Python
-            </p>
-        </div>
-    </section>
-    <section>
+    <main>
+		<section>
+			<div class="section-title">Summary</div>
+			<div class="content">
+				<p>11+ years of IT Experience, includes 7+ years as DevOps Cloud Expert facilitating Agile and Lead practices over Microservices, App Deployment & Infra Upgrades, Scaling, and Optimizing mission-critical deployments.</p>
+			</div>
+		</section>
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Azure</li>
+                <li>AWS</li>
+                <li>Git</li>
+                <li>GitHub Actions</li>
+                <li>Azure DevOps</li>
+                <li>Terraform</li>
+                <li>Jenkins</li>
+                <li>SAST & DAST Tools</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Argo CD</li>
+                <li>Helm Charts</li>
+                <li>Open Telemetry</li>
+                <li>New Relic</li>
+                <li>Prometheus</li>
+                <li>Linux</li>
+                <li>ServiceNow</li>
+                <li>PowerShell</li>
+                <li>Bash</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <article>
+                <h3>Technical Lead – DevOps & Cloud</h3>
+                <p><strong>Tech Mahindra Ltd.</strong> | 06/2022 – Present | Nagpur, MH</p>
+                <ul>
+                    <li>Designed, implemented, and managed CI/CD pipelines utilizing GitHub Actions, Azure DevOps for Microsoft Azure & AWS Infrastructure.</li>
+                    <li>Experience in creating Docker images and containers and pushing the images into ACR & EKC Registries.</li>
+                    <li>Implemented deployment strategies for multiple applications, including Rolling Updates and Canary deployments in Elastic Kubernetes Service (EKS).</li>
+                    <li>Automated repetitive tasks using IaC principles with tools like Terraform and Helm charts.</li>
+                    <li>Utilized Python & Shell scripting for automation of ad hoc and maintenance tasks.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Technical Lead – DevOps & Cloud</h3>
+                <p><strong>Wipro Ltd.</strong> | 12/2021 – 05/2022 | Pune, MH</p>
+                <ul>
+                    <li>Provisioned AWS infrastructure using CloudFormation templates and deployed applications on ECS, LightSail, and EKS.</li>
+                    <li>Created a fully automated CI/CD pipeline in Jenkins to continuously build, test artifacts, and trigger deployments on pull requests.</li>
+                    <li>Developed Grafana dashboards to visualize Prometheus metrics.</li>
+                    <li>Integrated AWS services for scalable cloud infrastructure management.</li>
+                    <li>Utilized Bash scripting for build automation, deployment, and maintenance tasks.</li>
+                </ul>
+            </article>
+            <!-- More experience sections can be added similarly -->
+        </section>
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="#">AZ-900 Azure Fundamentals by Microsoft</a></li>
+                <li><a href="#">CLF-C01 Cloud Practitioner by AWS</a></li>
+                <li><a href="#">ITIL Foundation Certificate</a></li>
+                <li><a href="#">New Relic Performance Pro Certified</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>B.E. in Electronics & Telecommunication, Nagpur University – 70%</li>
+                <li>Post Graduate Diploma in IT Management, SCDL, Symbiosis International (Deemed University) – 70%</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Awards</h2>
+            <ul>
+                <li>"Digital Warrior Q1 2023" for providing end-to-end solutions of DevSecOps using GitHub Action.</li>
+                <li>"Go the Extra Mile Q3 2021" to create a team of 15 from scratch.</li>
+                <li>"Star Performer Q4 2018" for meeting target deliveries of client and deployed APP in UK & Germany Region.</li>
+                <li>"Pat on the Back 2015/2017" for regular assignments without losing any SLA.</li>
+            </ul>
+        </section>
+		<section>
         <div class="section-title">Recommendations</div>
         <div class="content">
             <img src="images/recommendation1.png" alt="Recommendation 1 Screenshot" style="width:600px; height:auto;">
@@ -48,13 +111,6 @@
             <img src="images/recommendation4.png" alt="Recommendation 4 Screenshot" style="width:600px; height:auto;">
         </div>
     </section>
-    <section>
-        <div class="section-title">Projects</div>
-        <div class="content">
-            <h3>Project 1</h3>
-            <img src="images/project1.png" alt="Project 1 Screenshot" style="width:300px; height:auto;">
-            <p>Description of the project.</p>
-        </div>
-    </section>
+    </main>
 </body>
 </html>
