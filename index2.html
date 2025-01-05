@@ -174,7 +174,7 @@
                             <li>Below diagram is the logical plan of the solution:</li>
                         </ul>
                         <img src="./images/project1/Picture1.png" alt="Logical Plan of the Solution">
-                        <h4>Consideration on the Solution provided:</h4>
+                        <h3>Consideration on the Solution provided:</h3>
                         <ol>
                             <li>Azure Storage Sync Service will take care of syncing from Windows Server (On Prem) to Azure file share by services, so we have not added any code in the main script to handle that.</li>
                             <li>CSV will be the only input file to the main script.</li>
@@ -223,7 +223,7 @@
                         </p>
                         <img src="./images/project1/Picture5.png" alt="Path Verification">
 
-                        <h2>1.3 Step 2 - Encrypt Confidential Value [One Time Activity]</h2>
+                        <h3>1.3 Step 2 - Encrypt Confidential Value [One Time Activity]</h3>
                         <ol>
                             <li>
                                 Go to EncryptDecryptTool, on the path where you copied the zip file, navigate to 
@@ -240,21 +240,21 @@
                         </ol>
                         <img src="./images/project1/Picture7.png" alt="Encryption Process">
 
-                        <h2>1.4 Step 3 – Verify Main PowerShell Script</h2>
+                        <h3>1.4 Step 3 – Verify Main PowerShell Script</h3>
                         <ol>
                             <li>Navigate to <code>D:\NASAzureFileSyncronizer\Script\NASAzureFileSyncronizer.ps1</code>.
                                 <img src="./images/project1/Picture8.png" alt="Script Verification">
                             </li>
                         </ol>
 
-                        <h2>1.5 Step 4 – Create & Configure Task Scheduler</h2>
+                        <h3>1.5 Step 4 – Create & Configure Task Scheduler</h3>
                         <ol>
                             <li>Open “Task Scheduler” --> Click on Import Task.</li>
                             <li>Navigate to path: <code>D:\NASAzureFileSyncronizer\Script\TaskScheduler</code> and import <code>NASAzureFileSyncronizer.xml</code> to create and configure the task Scheduler.</li>
                         </ol>
                         <img src="./images/project1/Picture10.png" alt="Task Scheduler">
 
-                        <h2>1.6 Step 5 – Logging</h2>
+                        <h3>1.6 Step 5 – Logging</h3>
                         <p>
                             Logs are generated here for every run: 
                             <code>D:\NASAzureFileSyncronizer\Script\Logs</code>. 
