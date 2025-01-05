@@ -49,8 +49,48 @@
                 </ul>
             </section>
         </div>
-    
-        <div id="experience" class="tab-content">
+        <!-- Nested Tabs in Experience Section -->
+    <div id="experience" class="tab-content">
+        <div class="nested-tabs-container">
+            <div class="nested-tabs">
+                <div class="nested-tab active" data-nested-tab="tech-mahindra">Tech Mahindra</div>
+                <div class="nested-tab" data-nested-tab="wipro">Wipro</div>
+                <div class="nested-tab" data-nested-tab="pactera">Pactera Edge</div>
+                <div class="nested-tab" data-nested-tab="capgemini">Capgemini</div>
+            </div>
+            <div class="nested-tab-contents">
+                <div id="tech-mahindra" class="nested-tab-content active">
+                    <h3>Technical Lead – DevOps & Cloud</h3>
+                    <p><strong>Tech Mahindra Ltd.</strong> | 06/2022 – Present | Nagpur, MH</p>
+                    <ul>
+                        <li>Designed, implemented, and managed CI/CD pipelines...</li>
+                    </ul>
+                </div>
+                <div id="wipro" class="nested-tab-content">
+                    <h3>Technical Lead – DevOps & Cloud</h3>
+                    <p><strong>Wipro Ltd.</strong> | 12/2021 – 05/2022 | Pune, MH</p>
+                    <ul>
+                        <li>Provisioned AWS infrastructure using CloudFormation templates...</li>
+                    </ul>
+                </div>
+                <div id="pactera" class="nested-tab-content">
+                    <h3>Project Manager - DevOps</h3>
+                    <p><strong>Pactera Edge</strong> | 07/2018 – 11/2021 | Hyderabad, TG</p>
+                    <ul>
+                        <li>Provisioned global region infrastructure efficiently...</li>
+                    </ul>
+                </div>
+                <div id="capgemini" class="nested-tab-content">
+                    <h3>Senior Consultant</h3>
+                    <p><strong>Capgemini Ltd.</strong> | 07/2013 – 06/2018 | Pune, MH & Hungary, Europe</p>
+                    <ul>
+                        <li>Experience in installing and configuring Jenkins master...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- <div id="experience" class="tab-content">
             <section>
                 <h2>Experience</h2>
                 
@@ -100,7 +140,7 @@
                     </ul>
                 </article>
             </section>
-        </div>
+        </div> -->
     
         <div id="certifications" class="tab-content">
             <section>
@@ -172,16 +212,25 @@
         </div>
     </main>
     <script>
-        // JavaScript to handle tab switching
+        // Main tab switching
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', () => {
-                // Remove active class from all tabs and content
                 document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
     
-                // Add active class to clicked tab and its content
                 tab.classList.add('active');
                 document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
+        });
+    
+        // Nested tab switching
+        document.querySelectorAll('.nested-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.nested-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.nested-tab-content').forEach(content => content.classList.remove('active'));
+    
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-nested-tab')).classList.add('active');
             });
         });
     </script>

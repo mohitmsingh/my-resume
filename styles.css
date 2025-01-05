@@ -133,3 +133,47 @@ header a:hover {
     height: auto;
     margin-bottom: 10px;
 }
+
+/* Nested Tabs Styling */
+.nested-tabs-container {
+    display: flex;
+}
+
+.nested-tabs {
+    flex: 1;
+    max-width: 200px;
+    border-right: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.nested-tab {
+    padding: 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s;
+}
+
+.nested-tab.active {
+    background: #fff;
+    font-weight: bold;
+    border-left: 4px solid #0073e6;
+}
+
+.nested-tab:hover {
+    background: #d9d9d9;
+}
+
+.nested-tab-contents {
+    flex: 3;
+    padding: 20px;
+    background: #fff;
+}
+
+.nested-tab-content {
+    display: none;
+}
+
+.nested-tab-content.active {
+    display: block;
+}
