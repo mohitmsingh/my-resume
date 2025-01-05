@@ -25,120 +25,101 @@
         </a>
         </p>
     </header>
-    
+    <div class="tabs">
+        <div class="tab active" data-tab="summary">Summary</div>
+        <div class="tab" data-tab="skills">Technical Skills</div>
+        <div class="tab" data-tab="experience">Experience</div>
+        <div class="tab" data-tab="certifications">Certifications</div>
+        <div class="tab" data-tab="education">Education</div>
+        <div class="tab" data-tab="awards">Awards</div>
+        <div class="tab" data-tab="recommendation">Recommendations</div>
+    </div>
     <main>
         <div id="summary" class="tab-content active">
-            <h2>Summary</h2>
-                <p>11+ years of IT Experience, including 7+ years as a DevOps Cloud Expert facilitating Agile and Lead practices over Microservices, App Deployment & Infra Upgrades, Scaling, and Optimizing mission-critical deployments.</p>
+            <section>
+                <h2>Summary</h2>
+                <div class="content">
+                    <p>11+ years of IT Experience, including 7+ years as a DevOps Cloud Expert facilitating Agile and Lead practices over Microservices, App Deployment & Infra Upgrades, Scaling, and Optimizing mission-critical deployments.</p>
+                </div>
+            </section>
         </div>
-
-        <section>
-            <h2>Technical Skills</h2>
-            <ul>
-               Azure | AWS | GIT | GITHUB ACTION | JENKINS | AZURE DEVOPS | JENKINS | TERRAFORM | KUBERNETES | ARGOCD | HELM CHARTS | LINUX | POWERSHELL | BASH | PYTHON | OPEN TELEMETRY | NEW RELIC
-            </ul>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-            
-            <article>
-                <h3>Technical Lead – DevOps & Cloud</h3>
-                <p><strong>Tech Mahindra Ltd.</strong> | 06/2022 – Present | Nagpur, MH</p>
+    
+        <div id="skills" class="tab-content">
+            <section>
+                <h2>Technical Skills</h2>
                 <ul>
-                    <li>Designed, implemented, and managed CI/CD pipelines utilizing GitHub Actions, Azure DevOps for Microsoft Azure & AWS Infrastructure.</li>
-                    <li>Experience in creating Docker images and containers and pushing the images into ACR & EKC Registries.</li>
-                    <li>Implemented deployment strategies for multiple applications, including Rolling Updates and Canary deployments in Elastic Kubernetes Service (EKS).</li>
-                    <li>Automated repetitive tasks using IaC principles with tools like Terraform and Helm charts.</li>
-                    <li>Utilized Python & Shell scripting for automation of ad hoc and maintenance tasks.</li>
+                    Azure | AWS | GIT | GITHUB ACTION | JENKINS | AZURE DEVOPS | JENKINS | TERRAFORM | KUBERNETES | ARGOCD | HELM CHARTS | LINUX | POWERSHELL | BASH | PYTHON | OPEN TELEMETRY | NEW RELIC
                 </ul>
-            </article>
-
-            <article>
-                <h3>Technical Lead – DevOps & Cloud</h3>
-                <p><strong>Wipro Ltd.</strong> | 12/2021 – 05/2022 | Pune, MH</p>
+            </section>
+        </div>
+    
+        <div id="experience" class="tab-content">
+            <section>
+                <h2>Experience</h2>
+                <!-- Add all experience sections here -->
+            </section>
+        </div>
+    
+        <div id="certifications" class="tab-content">
+            <section>
+                <h2>Certifications</h2>
                 <ul>
-                    <li>Provisioned AWS infrastructure using CloudFormation templates and deployed applications on ECS, LightSail, and EKS.</li>
-                    <li>Created a fully automated CI/CD pipeline in Jenkins to continuously build, test artifacts, and trigger deployments on pull requests.</li>
-                    <li>Developed Grafana dashboards to visualize Prometheus metrics.</li>
-                    <li>Integrated AWS services for scalable cloud infrastructure management.</li>
-                    <li>Utilized Bash scripting for build automation, deployment, and maintenance tasks.</li>
+                    <li><a href="https://www.credly.com/badges/e0393bb7-c513-4a80-a20f-dafd69215ba4/public_url">AZ-900 Azure Fundamentals by Microsoft</a></li>
+                    <li><a href="https://www.credly.com/go/RDTttkAYjTldPxowwCek6Q">CLF-C01 Cloud Practitioner by AWS</a></li>
+                    <li><a href="https://www.linkedin.com/in/mohititsector/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAArvgocB0oXeyJ485rbHEtmDfXM2wHbp548,1635465515139)/">ITIL Foundation Certificate</a></li>
+                    <li><a href="#">New Relic Performance Pro Certified</a></li>
                 </ul>
-            </article>
-
-            <article>
-                <h3>Project Manager - DevOps</h3>
-                <p><strong>Pactera Edge</strong> | 07/2018 – 11/2021 | Hyderabad, TG</p>
+            </section>
+        </div>
+    
+        <div id="education" class="tab-content">
+            <section>
+                <h2>Education</h2>
                 <ul>
-                    <li>Provisioned global region infrastructure efficiently with Azure ARM Templates on Azure Landing Zone.</li>
-                    <li>Demonstrated adeptness with foundational development tools and crafting complex pipelines using Azure DevOps.</li>
-                    <li>Proficiently created images and containers, orchestrated PODs, and maintained services and ingress using Azure Kubernetes Service.</li>
-                    <li>Managed various Azure resources including Key Vault, Resource Group, Service Bus, Containers, AKS, access policies, secrets, quota creation, and Pinning.</li>
+                    <li>B.E. in Electronics & Telecommunication, Nagpur University – 70%</li>
+                    <li>Post Graduate Diploma in IT Management, SCDL, Symbiosis International (Deemed University) – 70%</li>
                 </ul>
-            </article>
-
-            <article>
-                <h3>Senior Consultant</h3>
-                <p><strong>Capgemini Ltd.</strong> | 07/2013 – 06/2018 | Pune, MH & Hungary, Europe</p>
+            </section>
+        </div>
+    
+        <div id="awards" class="tab-content">
+            <section>
+                <h2>Awards</h2>
                 <ul>
-                    <li>Experience in installing and configuring Jenkins master and worker nodes. Built CI/CD pipeline and managing the infrastructure as code.</li>
-                    <li>Responsible for managing source code and compiling using Maven.</li>
-                    <li>Worked on Amazon Web Services (EC2, ELB, VPC, S3, CloudFront, IAM, RDS, Route 53, CloudWatch).</li>
-                    <li>Managed deployment team of 15 members for working in all shifts.</li>
+                    <li>"Digital Warrior Q1 2023" for providing end-to-end solutions of DevSecOps using GitHub Action.</li>
+                    <li>"Go the Extra Mile Q3 2021" to create a team of 15 from scratch.</li>
+                    <li>"Star Performer Q4 2018" for meeting target deliveries of client and deployed APP in UK & Germany Region.</li>
+                    <li>"Pat on the Back 2015/2017" for regular assignments without losing any SLA.</li>
                 </ul>
-            </article>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.credly.com/badges/e0393bb7-c513-4a80-a20f-dafd69215ba4/public_url">AZ-900 Azure Fundamentals by Microsoft</a></li>
-                <li><a href="https://www.credly.com/go/RDTttkAYjTldPxowwCek6Q">CLF-C01 Cloud Practitioner by AWS</a></li>
-                <li><a href="https://www.linkedin.com/in/mohititsector/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAAArvgocB0oXeyJ485rbHEtmDfXM2wHbp548,1635465515139)/">ITIL Foundation Certificate</a></li>
-                <li><a href="#">New Relic Performance Pro Certified</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>B.E. in Electronics & Telecommunication, Nagpur University – 70%</li>
-                <li>Post Graduate Diploma in IT Management, SCDL, Symbiosis International (Deemed University) – 70%</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Awards</h2>
-            <ul>
-                <li>"Digital Warrior Q1 2023" for providing end-to-end solutions of DevSecOps using GitHub Action.</li>
-                <li>"Go the Extra Mile Q3 2021" to create a team of 15 from scratch.</li>
-                <li>"Star Performer Q4 2018" for meeting target deliveries of client and deployed APP in UK & Germany Region.</li>
-                <li>"Pat on the Back 2015/2017" for regular assignments without losing any SLA.</li>
-            </ul>
-        </section>
-        <section id="recommendation">
-            <h2>Recommendation</h2>
-            <div class="content">
-                <img src="images/recommendation1.png" alt="Recommendation 1 Screenshot" style="width:700px; height:auto;">
-                <img src="images/recommendation2.png" alt="Recommendation 2 Screenshot" style="width:700px; height:auto;">
-                <img src="images/recommendation3.png" alt="Recommendation 3 Screenshot" style="width:700px; height:auto;">
-                <img src="images/recommendation4.png" alt="Recommendation 4 Screenshot" style="width:700px; height:auto;">
-            </div>
-        </section>
+            </section>
+        </div>
+    
+        <div id="recommendation" class="tab-content">
+            <section>
+                <h2>Recommendations</h2>
+                <div class="content">
+                    <img src="images/recommendation1.png" alt="Recommendation 1 Screenshot" style="width:700px; height:auto;">
+                    <img src="images/recommendation2.png" alt="Recommendation 2 Screenshot" style="width:700px; height:auto;">
+                    <img src="images/recommendation3.png" alt="Recommendation 3 Screenshot" style="width:700px; height:auto;">
+                    <img src="images/recommendation4.png" alt="Recommendation 4 Screenshot" style="width:700px; height:auto;">
+                </div>
+            </section>
+        </div>
     </main>
-</body>
-<script>
-    // JavaScript to handle tab switching
-    document.querySelectorAll('.tab').forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs and content
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-
-            // Add active class to clicked tab and its content
-            tab.classList.add('active');
-            document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+    
+    <script>
+        // JavaScript to handle tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and content
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+    
+                // Add active class to clicked tab and its content
+                tab.classList.add('active');
+                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+            });
         });
-    });
-</script>
+    </script>
+</body>
 </html>

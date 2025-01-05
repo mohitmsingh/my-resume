@@ -32,6 +32,48 @@ header a {
     margin: 0 10px;
 }
 
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+.tab.active {
+    background: #fff;
+    font-weight: bold;
+    border-top: 2px solid #0073e6;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.tab:hover {
+    background: #d9d9d9;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 /* Main Content */
 main {
     max-width: 800px;
