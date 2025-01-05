@@ -165,9 +165,9 @@
                 </div>
                 <div class="nested-tab-contents">
 
-                    <div id="Project 2" class="nested-tab-content active">
-                        <h3>NASAzureFileSyncronizer (Sync NAS(OnPrem) to Jump Server to Azure Cloud)</h3>
-                        <h2>1.1 Assumption & Limitation</h2>
+                    <div id="Project 1" class="nested-tab-content active">
+                        <h2>NASAzureFileSyncronizer (Sync NAS(OnPrem) to Jump Server to Azure Cloud)</h2>
+                        <h3>1.1 Assumption & Limitation</h3>
                         <ul>
                             <li>Between OnPrem Jump Server to NAS, Robocopy is in place without /MIR i.e., copy-paste is happening between those endpoints, due to which anything deleted from Azure File Share will never be deleted from NAS.</li>
                             <li>Intentional & Adjustable Delay has been added between Azure File Share to OnPrem Jump Server to avoid any potential data/file loss.</li>
@@ -181,7 +181,7 @@
                             <li>For multiple NAS connections, please add input files to the main script. Based on that, the task scheduler frequency to run should be around every 10 minutes.</li>
                             <li>A mechanism has been added to capture logs on a specific path which will be shared in the SOP document.</li>
                         </ol>
-                        <h2>1.2 Step 1 - Provide Input using CSV file [One Time Activity]</h2>
+                        <h3>1.2 Step 1 - Provide Input using CSV file [One Time Activity]</h3>
                         <ol>
                             <li>
                                 Download the Tool Zip Package 
