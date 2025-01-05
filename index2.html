@@ -214,10 +214,84 @@
                                     <td>Example: dev, sit, uat, prd</td>
                                     <td>Environment Name</td>
                                 </tr>
-                                <!-- Additional table rows omitted for brevity -->
+                                <tr>
+                                    <td>nasMachineUserName</td>
+                                    <td>[Should be encrypted] <br> corp-aisXXXdev\\nas_nwf1, <br> corp-aisXXXdev\\nas_nwf2</td>
+                                    <td>Username of NAS Machine Login should be encrypted using EncryptDecrypt Tool 
+                                        <a href="https://github.com/mohitmsingh/automation-script/tree/main/powershell/NASAzureFileSyncronizer#13step-2---encrypt-confidential-value-one-time-activity">[Step 2 - Encrypt Confidential Value One Time Activity]</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>nasMachinePwd</td>
+                                    <td>[Should be encrypted] <br> Password@1,Password@2</td>
+                                    <td>Password of NAS Machine Login should be encrypted using EncryptDecrypt Tool 
+                                        <a href="https://github.com/mohitmsingh/automation-script/tree/main/powershell/NASAzureFileSyncronizer#13step-2---encrypt-confidential-value-one-time-activity">[Step 2 - Encrypt Confidential Value One Time Activity]</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>inputNASPath</td>
+                                    <td>\\\\10.137.XX.X\\sht_sdwf</td>
+                                    <td>NAS Path which needs to be mapped as drive. It should be in the same format.</td>
+                                </tr>
+                                <tr>
+                                    <td>inputOnPremPath</td>
+                                    <td>D:\\sht_sbnwf</td>
+                                    <td>On Prem Path (Windows server) where the script has been copied.</td>
+                                </tr>
+                                <tr>
+                                    <td>inputParentFolder</td>
+                                    <td>\\DEV\\DATA\\</td>
+                                    <td>NAS Parent Folder should be added here. Example:
+                                        <br> \\DEV\\DATA1\\ belongs to NAS1
+                                        <br> \\STG\\DATA2\\ belongs to NAS2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>inputFolderReadWriteAccess</td>
+                                    <td>FolderName1, FolderName2</td>
+                                    <td>Subfolder names that need to be copied from NAS to Azure & Azure to NAS.</td>
+                                </tr>
+                                <tr>
+                                    <td>inputFolderReadOnly</td>
+                                    <td>FolderName1, FolderName2</td>
+                                    <td>Subfolder names that need to be copied from NAS to Azure only.</td>
+                                </tr>
+                                <tr>
+                                    <td>inputFolderWriteOnly</td>
+                                    <td>FolderName1, FolderName2</td>
+                                    <td>Subfolder names that need to be copied from Azure to NAS only.</td>
+                                </tr>
+                                <tr>
+                                    <td>rgName</td>
+                                    <td>Example: rg-AppName-az-region-dev-001</td>
+                                    <td>Assumption: The value will be the same for all NAS to a particular environment.
+                                        <br> Get the value from Azure side, Resource Group of storage sync service used for this environment.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>StorageSyncServiceName</td>
+                                    <td>Example: sss-appname-az-region-dev-001</td>
+                                    <td>Assumption: The value will be the same for all NAS to a particular environment.
+                                        <br> Get the value from Azure side, Storage Sync Service used for this environment.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SyncGroupName</td>
+                                    <td>Example: appname-syncgroup1-dev</td>
+                                    <td>Assumption: The value will be the same for all NAS to a particular environment.
+                                        <br> Get the value from Azure side, the Sync Group Name used for this from the Storage Sync Service.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CloudEndpointName</td>
+                                    <td>[Should be encrypted] Example: 112b9026-XXXX-XXXX-XXXX-0e70e17aaf64</td>
+                                    <td>Assumption: The value will be the same for all NAS to a particular environment.
+                                        <br> Get the value from Azure side, Cloud Endpoint created for Sync group of storage sync service used for this environment 
+                                        <a href="https://github.com/mohitmsingh/automation-script/tree/main/powershell/NASAzureFileSyncronizer#13step-2---encrypt-confidential-value-one-time-activity">[Step 2 - Encrypt Confidential Value One Time Activity]</a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
-
                         <p>Once the changes are made to input.csv, copy back the input file from local machine to OnPrem Path 
                             <code>D:\NASAzureFileSyncronizer\Script</code>.
                         </p>
